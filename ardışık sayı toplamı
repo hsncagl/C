@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+/* deger adinda islem yapacagimiz integer bir degisken tanimliyoruz. Daha sonra sonucu gorebilmemiz icin de sonuc adinda bir degisken tanimlayip bu iki
+degiskeni 0 degerine atiyoruz. Kullanicidan deger tanimlamasini istiyoruz. Eger sayi 0 dan kucukse 0 dan buyuk sayi girilene kadar Pozitif degerlikli
+sayi girin yazisini ekranda donduruyoruz. 0 dan buyuk sayi girilince islemi yapiyoruz. Eger sayi 0 dan buyukse islemi tamamlayip kodumuzu calistiriyoruz.*/
+
+
+    int deger=0;
+    int sonuc=0;
+
+    printf("lutfen toplamak istediginiz degeri giriniz:");
+    scanf("%d",&deger);
+
+
+    if(deger<0)
+    {
+
+    for(int j=0;j>deger;j++)
+    {
+          if(deger<0)
+          {
+          printf("lutfen pozitif degerlikli sayi giriniz:");
+          scanf("%d",&deger);
+          }
+              for(int i=0;i<=deger;i++)
+              {
+                  sonuc=sonuc+i;
+              }
+          }
+    }
+
+
+ else
+    {
+    for(int i=0;i<=deger;i++)
+    {
+    sonuc=sonuc+i;
+    }
+    }
+
+
+
+
+
+    printf("%d",sonuc);
+
+
+
+
+
+
+
+    return 0;
+}
